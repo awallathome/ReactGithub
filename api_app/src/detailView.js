@@ -1,8 +1,6 @@
-/* eslint-disable */
-
 import React from 'react';
 
-function DetailView({detail, followers, following, setVisible}) {
+function DetailView({detail, setIsLoading}) {
 
   return (
     <div className="bio-card">
@@ -12,7 +10,7 @@ function DetailView({detail, followers, following, setVisible}) {
       <div >{detail.bio}</div>
       <div>Followers: {detail.followers}</div>
       <div>Folowing: {detail.following}</div>
-      <button id="closeBtn" onClick={()=> {setVisible(false)}} float="right">X</button>
+      <button id="closeBtn" onClick={()=> {setIsLoading(true)}} float="right">X</button>
     </div>
   )
 
