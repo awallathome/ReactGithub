@@ -1,0 +1,56 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 30px;
+}
+
+.App-header {
+  box-shadow:  0 8px 0px 0 rgba(87, 85, 85, 0.1);;
+  background-color: rgb(240, 161, 161);
+  height: 80px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+#contributors {
+  width: 100%;
+}
+
+tr:nth-child(even) {
+  background-color: #eee;
+}
+
+.bio-card {
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, .2);
+  background-color: rgb(240, 161, 161);
+  padding: 15px;
+  height: flex;
+  width: flex;
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+}
+
+.header-column {
+  width: 33%;
+}
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+#closeBtn{
+  background-color: white;
+  color:rgb(125, 8, 8)
+}
+
+
