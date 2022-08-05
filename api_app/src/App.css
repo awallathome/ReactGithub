@@ -29,7 +29,6 @@ tr:nth-child(even) {
   padding: 15px;
   height: flex;
   width: flex;
-  max-width: 200px;
   display: block;
   position: fixed;
   top: 50%;
