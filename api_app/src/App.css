@@ -29,6 +29,7 @@ tr:nth-child(even) {
   padding: 15px;
   height: flex;
   width: flex;
+  max-width: 200px;
   display: block;
   position: fixed;
   top: 50%;
@@ -45,8 +46,10 @@ tr:nth-child(even) {
 }
 
 #closeBtn{
-  background-color: white;
-  color:rgb(199, 122,122)
+  color:black;
+  width: 10px;
+  float: right;
+  text-decoration: none;
 }
 
 
