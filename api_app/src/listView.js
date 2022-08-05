@@ -14,7 +14,7 @@ function ListView({ data }) {
       url: `https://api.github.com/users/${item.login}`
     })
       .then((res) => {
-        console.log("user", res.data)
+        // console.log("user", res.data)
         setUser(res.data)
        
       })

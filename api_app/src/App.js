@@ -16,9 +16,7 @@ function App() {
       setData(res.data);
     })
 
-  }, []);
-  console.log("data on load:", data)
-  
+  }, []);  
 
   return (
     <div className="App">
