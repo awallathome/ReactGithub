@@ -1,7 +1,8 @@
 # ReactGithub
 by Adam Wallis
 
-1. After clonging this repository, please navigate into the api_app folder and run 'npm install' in the terminal to install dependencies for this project
+1. After clonging this repository, please navigate into the api_app folder and run 'npm install' in the terminal to install dependencies for this project.
+
 2. Then run 'npm start' and navigate to your browser at https://localhost:3000/
 
 FYI:

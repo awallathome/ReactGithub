@@ -2,13 +2,40 @@ import React from 'react';
 
 function DetailView({detail, setIsLoading}) {
 
+  const styles={
+    closeBtn: {
+      color:'black',
+      width: '10px',
+      float: 'right',
+      'text-decoration': 'none',
+    },
+    'bio-card': {
+      'box-shadow': '0 8px 8px 0 rgba(0, 0, 0, .2)',
+      'background-color': 'rgb(199, 122, 122)',
+      padding: '15px',
+      height: 'flex',
+      width: 'flex',
+      display: 'block',
+      position: 'fixed',
+      top: '50%',
+      left: '50%',
+      transform: 'translate(-50%, -50%)', 
+    },
+    avatar: {
+      width: '200px',
+      height: '200px'
+    },
+    avatarDiv: {
+      display: 'inline-block'
+    }
+  }
 
   return (
-    <div className="bio-card">
+    <div style={styles['bio-card']}>
       <div>
-        <a href="#" id="closeBtn" onClick={()=> {setIsLoading(true)}} >x</a>
+        <a href="#" style={styles.closeBtn} onClick={()=> {setIsLoading(true)}} >X</a>
       </div>
-      <div display="inline-block"><img src={detail.avatar_url} alt="face" width="150" height="150" /></div>
+      <div style={styles.avatarDiv}><img src={detail.avatar_url} alt="face" style={styles.avatar} /></div>
       <div>{detail.name} ({detail.login})</div>
       <div>{detail.location}</div>
       <div >{detail.bio}</div>

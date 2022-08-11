@@ -7,6 +7,19 @@ function ListView({ data }) {
 
   const [user, setUser ] = useState("")
   const [isLoading, setIsLoading] = useState(true);
+
+  const styles = {
+    avatar: {
+      width: '50px',
+      height: '50px',
+    },
+    headerColumn: {
+      width: '33%',
+    },
+    contributors: {
+      width:'100%',
+    }
+  }
  
   function getUserDetail(item) {
     axios({
@@ -32,15 +45,15 @@ function ListView({ data }) {
   return (
     <div>
       {!isLoading ? <DetailView detail={user} setIsLoading={setIsLoading}/> : null}
-      <table id="contributors">
-        <tr border-bottom="solid 2px" border-color="black" >
+      <table style={styles.contributors}>
+        <tr >
           <th>Avatar</th>
           <th>Login</th>
           <th># Contributions</th>
         </tr>
         {data.map(item => (
           <tr onClick={() => openDetail(item)}>
-            <th className="header-column" ><img src={item.avatar_url} alt="face" width="50" height="50" /></th>
+            <th style={styles.headerColumn} ><img src={item.avatar_url} alt="face" style={styles.avatar} /></th>
             <th >{item.login}</th>
             <th >{item.contributions}</th>
           </tr>
